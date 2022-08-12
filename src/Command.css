@@ -1,0 +1,30 @@
+.command {
+  white-space: nowrap;
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.element {
+  display: inline-block;
+}
+
+input {
+  border-style: hidden;
+  position: absolute;
+  left: -1000px;
+}
+
+.caret {
+  width: 0.5em;
+  height: 16.5px;
+  background-color: gray;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
